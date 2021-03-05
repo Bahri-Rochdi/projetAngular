@@ -1,0 +1,125 @@
+<app-header-employeur></app-header-employeur>
+<br><br><br>
+<div class="container">
+  <div class="card mb-3" style="max-width: 100%;">
+    <div class="form-group row">
+      <div class="col-md-4">
+        <img src="https://tuniscope.com/uploads/images/content/esprit-210716-1.jpg"
+             alt="..." style="width: 100%; margin: auto;">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Nom entreprise</h5>
+          <p class="card-text">Desctription de l'entreprise...</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <h1>Formulaire d'ajouter un offre d'emploi :</h1>
+  <br>
+  <div>
+    <input class="form-control" type="text" placeholder="Titre emploi" aria-label="default input example">
+  </div>
+  <br>
+  <div>
+    <input class="form-control" type="text" placeholder="Profil demander" aria-label="default input example">
+  </div>
+  <br>
+  <div class="form-group row">
+        <div class="col-md-12">
+            <textarea class="form-control" placeholder="Description de l'emploi" id="floatingTextarea"></textarea>
+       </div>
+  </div>
+
+  <div class="form-group row">
+
+    <div class="col-lg-4">
+      <select  class="form-control" name="ville"  >
+        <option class="form-control" required>Lieu travail</option>
+        <option>Ariana</option>
+        <option>Béja</option>
+        <option>Ben Arous</option>
+        <option>Bizerte</option>
+        <option>Gabes</option>
+        <option>Gafsa</option>
+        <option>Jendouba</option>
+        <option>Kairouan</option>
+        <option>Kasserine</option>
+        <option>Kebili</option>
+        <option>La Manouba</option>
+        <option>Le Kef</option>
+        <option>Mahdia</option>
+        <option>Médenine</option>
+        <option>Monastir</option>
+        <option>Nabeul</option>
+        <option>Sfax</option>
+        <option>Sidi Bouzid</option>
+        <option>Siliana</option>
+        <option>Sousse</option>
+        <option>Tataouine</option>
+        <option>Tozeur</option>
+        <option>Tunis</option>
+        <option>Zaghouan</option>
+      </select>
+    </div>
+    <div class="col-lg-4">
+      <input class="form-control" type="number" placeholder="Nombre de poste demandé" aria-label="default input example">
+    </div>
+    <div class="col-lg-4">
+      <select class="form-control" >
+        <option selected value="1" >H/F</option>
+        <option value="2">Masculin</option>
+        <option value="3">Feminin</option>
+      </select>
+    </div>
+    </div>
+  <div class="form-group row">
+    <div class="col-lg-4">
+      <select class="form-control" >
+        <option selected value="1" >Temps plein</option>
+        <option value="2">Temps partiel</option>
+        <option value="3">Stage PFE</option>
+        <option value="4">Formation</option>
+      </select>
+    </div>
+    <div class="col-lg-4">
+      <select  class="form-control" name="ville"  >
+        <option class="form-control" required>Domaine </option>
+        <option>Informatique</option>
+        <option>électromécanique</option>
+        <option>électronique</option>
+        <option>Santé</option>
+        <option>Centre d'appel</option>
+        <option>travaux agricole</option>
+        <option>Adminstration</option>
+        <option>sécurité</option>
+        <option>Aéronotique</option>
+        <option>transports</option>
+        <option>Instruction</option>
+        <option>Autres</option>
+
+      </select>
+    </div>
+  </div>
+
+
+  <div class="form-group row">
+    <div class="col-lg-4">
+      <label >Date d'expiration</label>
+      <input class="form-control" type="date" aria-label="default input example">
+    </div>
+  </div>
+
+      <div class="form-group row">
+        <div class="col-lg-12">
+          <a [routerLink]="['/EspaceEmployeur']" type="button" class="btn  btn-primary">Ajouter</a>
+        </div>
+      </div>
+
+
+
+</div>
